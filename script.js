@@ -10,7 +10,8 @@ $("button").on("click", function () {
         gamestate = false;
         i = 0;
         answer = []
-        $("h1").text("You lose. Press any button to try again.")
+        $("h1").text("You lose. Press any button to try again. (not spacebar or enter)")
+        $("h1").css("font-size", "5rem")
         // if incorrect, reset the game and purge 'answer' and set the i iterator to 0
     }
     if (answer.length === i && gamestate === true) {
